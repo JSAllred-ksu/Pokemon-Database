@@ -38,7 +38,7 @@
             this.labelType = new System.Windows.Forms.Label();
             this.MenuType = new System.Windows.Forms.ComboBox();
             this.labelMoves = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.MenuMove = new System.Windows.Forms.ComboBox();
             this.labelResults = new System.Windows.Forms.Label();
             this.ResultsBox = new System.Windows.Forms.ListBox();
             this.labelMake = new System.Windows.Forms.Label();
@@ -50,163 +50,181 @@
             // labelFilter
             // 
             this.labelFilter.AutoSize = true;
-            this.labelFilter.Location = new System.Drawing.Point(12, 9);
+            this.labelFilter.Location = new System.Drawing.Point(28, 20);
+            this.labelFilter.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.labelFilter.Name = "labelFilter";
-            this.labelFilter.Size = new System.Drawing.Size(47, 13);
+            this.labelFilter.Size = new System.Drawing.Size(107, 29);
             this.labelFilter.TabIndex = 0;
             this.labelFilter.Text = "Filter on:";
             // 
             // labelLocation
             // 
             this.labelLocation.AutoSize = true;
-            this.labelLocation.Location = new System.Drawing.Point(12, 39);
+            this.labelLocation.Location = new System.Drawing.Point(28, 87);
+            this.labelLocation.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.labelLocation.Name = "labelLocation";
-            this.labelLocation.Size = new System.Drawing.Size(48, 13);
+            this.labelLocation.Size = new System.Drawing.Size(104, 29);
             this.labelLocation.TabIndex = 1;
             this.labelLocation.Text = "Location";
             // 
             // MenuLocation
             // 
             this.MenuLocation.FormattingEnabled = true;
-            this.MenuLocation.Location = new System.Drawing.Point(75, 36);
+            this.MenuLocation.Location = new System.Drawing.Point(175, 80);
+            this.MenuLocation.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.MenuLocation.Name = "MenuLocation";
-            this.MenuLocation.Size = new System.Drawing.Size(121, 21);
+            this.MenuLocation.Size = new System.Drawing.Size(277, 37);
             this.MenuLocation.TabIndex = 2;
             // 
             // labelTrainer
             // 
             this.labelTrainer.AutoSize = true;
-            this.labelTrainer.Location = new System.Drawing.Point(12, 80);
+            this.labelTrainer.Location = new System.Drawing.Point(28, 178);
+            this.labelTrainer.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.labelTrainer.Name = "labelTrainer";
-            this.labelTrainer.Size = new System.Drawing.Size(40, 13);
+            this.labelTrainer.Size = new System.Drawing.Size(91, 29);
             this.labelTrainer.TabIndex = 3;
             this.labelTrainer.Text = "Trainer";
             // 
             // MenuTrainers
             // 
             this.MenuTrainers.FormattingEnabled = true;
-            this.MenuTrainers.Location = new System.Drawing.Point(75, 80);
+            this.MenuTrainers.Location = new System.Drawing.Point(175, 178);
+            this.MenuTrainers.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.MenuTrainers.Name = "MenuTrainers";
-            this.MenuTrainers.Size = new System.Drawing.Size(121, 21);
+            this.MenuTrainers.Size = new System.Drawing.Size(277, 37);
             this.MenuTrainers.TabIndex = 4;
             // 
             // labelPokemon
             // 
             this.labelPokemon.AutoSize = true;
-            this.labelPokemon.Location = new System.Drawing.Point(12, 124);
+            this.labelPokemon.Location = new System.Drawing.Point(28, 277);
+            this.labelPokemon.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.labelPokemon.Name = "labelPokemon";
-            this.labelPokemon.Size = new System.Drawing.Size(52, 13);
+            this.labelPokemon.Size = new System.Drawing.Size(116, 29);
             this.labelPokemon.TabIndex = 5;
             this.labelPokemon.Text = "Pokemon";
             // 
             // MenuPokemon
             // 
             this.MenuPokemon.FormattingEnabled = true;
-            this.MenuPokemon.Location = new System.Drawing.Point(75, 124);
+            this.MenuPokemon.Location = new System.Drawing.Point(175, 277);
+            this.MenuPokemon.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.MenuPokemon.Name = "MenuPokemon";
-            this.MenuPokemon.Size = new System.Drawing.Size(121, 21);
+            this.MenuPokemon.Size = new System.Drawing.Size(277, 37);
             this.MenuPokemon.TabIndex = 6;
             // 
             // labelType
             // 
             this.labelType.AutoSize = true;
-            this.labelType.Location = new System.Drawing.Point(12, 166);
+            this.labelType.Location = new System.Drawing.Point(28, 370);
+            this.labelType.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.labelType.Name = "labelType";
-            this.labelType.Size = new System.Drawing.Size(31, 13);
+            this.labelType.Size = new System.Drawing.Size(68, 29);
             this.labelType.TabIndex = 7;
             this.labelType.Text = "Type";
             // 
             // MenuType
             // 
             this.MenuType.FormattingEnabled = true;
-            this.MenuType.Location = new System.Drawing.Point(75, 166);
+            this.MenuType.Location = new System.Drawing.Point(175, 370);
+            this.MenuType.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.MenuType.Name = "MenuType";
-            this.MenuType.Size = new System.Drawing.Size(121, 21);
+            this.MenuType.Size = new System.Drawing.Size(277, 37);
             this.MenuType.TabIndex = 8;
             // 
             // labelMoves
             // 
             this.labelMoves.AutoSize = true;
-            this.labelMoves.Location = new System.Drawing.Point(12, 209);
+            this.labelMoves.Location = new System.Drawing.Point(28, 466);
+            this.labelMoves.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.labelMoves.Name = "labelMoves";
-            this.labelMoves.Size = new System.Drawing.Size(34, 13);
+            this.labelMoves.Size = new System.Drawing.Size(72, 29);
             this.labelMoves.TabIndex = 9;
             this.labelMoves.Text = "Move";
             // 
-            // comboBox1
+            // MenuMove
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(75, 209);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 10;
+            this.MenuMove.FormattingEnabled = true;
+            this.MenuMove.Location = new System.Drawing.Point(175, 466);
+            this.MenuMove.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.MenuMove.Name = "MenuMove";
+            this.MenuMove.Size = new System.Drawing.Size(277, 37);
+            this.MenuMove.TabIndex = 10;
             // 
             // labelResults
             // 
             this.labelResults.AutoSize = true;
-            this.labelResults.Location = new System.Drawing.Point(12, 255);
+            this.labelResults.Location = new System.Drawing.Point(28, 569);
+            this.labelResults.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.labelResults.Name = "labelResults";
-            this.labelResults.Size = new System.Drawing.Size(45, 13);
+            this.labelResults.Size = new System.Drawing.Size(99, 29);
             this.labelResults.TabIndex = 11;
             this.labelResults.Text = "Results:";
             // 
             // ResultsBox
             // 
             this.ResultsBox.FormattingEnabled = true;
-            this.ResultsBox.Location = new System.Drawing.Point(75, 255);
+            this.ResultsBox.ItemHeight = 29;
+            this.ResultsBox.Location = new System.Drawing.Point(175, 569);
+            this.ResultsBox.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.ResultsBox.Name = "ResultsBox";
             this.ResultsBox.ScrollAlwaysVisible = true;
-            this.ResultsBox.Size = new System.Drawing.Size(236, 186);
+            this.ResultsBox.Size = new System.Drawing.Size(545, 410);
             this.ResultsBox.TabIndex = 12;
             // 
             // labelMake
             // 
             this.labelMake.AutoSize = true;
-            this.labelMake.Location = new System.Drawing.Point(422, 9);
+            this.labelMake.Location = new System.Drawing.Point(985, 20);
+            this.labelMake.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.labelMake.Name = "labelMake";
-            this.labelMake.Size = new System.Drawing.Size(82, 13);
+            this.labelMake.Size = new System.Drawing.Size(181, 29);
             this.labelMake.TabIndex = 13;
             this.labelMake.Text = "Make a Trainer:";
             // 
             // TLabelLocation
             // 
             this.TLabelLocation.AutoSize = true;
-            this.TLabelLocation.Location = new System.Drawing.Point(422, 39);
+            this.TLabelLocation.Location = new System.Drawing.Point(985, 87);
+            this.TLabelLocation.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.TLabelLocation.Name = "TLabelLocation";
-            this.TLabelLocation.Size = new System.Drawing.Size(48, 13);
+            this.TLabelLocation.Size = new System.Drawing.Size(104, 29);
             this.TLabelLocation.TabIndex = 14;
             this.TLabelLocation.Text = "Location";
             // 
             // TLabelName
             // 
             this.TLabelName.AutoSize = true;
-            this.TLabelName.Location = new System.Drawing.Point(422, 80);
+            this.TLabelName.Location = new System.Drawing.Point(985, 178);
+            this.TLabelName.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.TLabelName.Name = "TLabelName";
-            this.TLabelName.Size = new System.Drawing.Size(35, 13);
+            this.TLabelName.Size = new System.Drawing.Size(78, 29);
             this.TLabelName.TabIndex = 15;
             this.TLabelName.Text = "Name";
             // 
             // TLabelPokemon
             // 
             this.TLabelPokemon.AutoSize = true;
-            this.TLabelPokemon.Location = new System.Drawing.Point(422, 124);
+            this.TLabelPokemon.Location = new System.Drawing.Point(985, 277);
+            this.TLabelPokemon.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.TLabelPokemon.Name = "TLabelPokemon";
-            this.TLabelPokemon.Size = new System.Drawing.Size(52, 13);
+            this.TLabelPokemon.Size = new System.Drawing.Size(116, 29);
             this.TLabelPokemon.TabIndex = 16;
             this.TLabelPokemon.Text = "Pokemon";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1867, 1004);
             this.Controls.Add(this.TLabelPokemon);
             this.Controls.Add(this.TLabelName);
             this.Controls.Add(this.TLabelLocation);
             this.Controls.Add(this.labelMake);
             this.Controls.Add(this.ResultsBox);
             this.Controls.Add(this.labelResults);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.MenuMove);
             this.Controls.Add(this.labelMoves);
             this.Controls.Add(this.MenuType);
             this.Controls.Add(this.labelType);
@@ -217,6 +235,7 @@
             this.Controls.Add(this.MenuLocation);
             this.Controls.Add(this.labelLocation);
             this.Controls.Add(this.labelFilter);
+            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -236,7 +255,7 @@
         private System.Windows.Forms.Label labelType;
         private System.Windows.Forms.ComboBox MenuType;
         private System.Windows.Forms.Label labelMoves;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox MenuMove;
         private System.Windows.Forms.Label labelResults;
         private System.Windows.Forms.ListBox ResultsBox;
         private System.Windows.Forms.Label labelMake;
