@@ -48,47 +48,47 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TrainerPokemon1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.TPM11 = new System.Windows.Forms.ComboBox();
+            this.TPM14 = new System.Windows.Forms.ComboBox();
+            this.TPM13 = new System.Windows.Forms.ComboBox();
+            this.TPM12 = new System.Windows.Forms.ComboBox();
+            this.TPM22 = new System.Windows.Forms.ComboBox();
+            this.TPM23 = new System.Windows.Forms.ComboBox();
+            this.TPM24 = new System.Windows.Forms.ComboBox();
+            this.TPM21 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.TrainerPokemon2 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.TPM32 = new System.Windows.Forms.ComboBox();
+            this.TPM33 = new System.Windows.Forms.ComboBox();
+            this.TPM34 = new System.Windows.Forms.ComboBox();
+            this.TPM31 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.PokemonTrainer3 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.TPM42 = new System.Windows.Forms.ComboBox();
+            this.TPM43 = new System.Windows.Forms.ComboBox();
+            this.TPM44 = new System.Windows.Forms.ComboBox();
+            this.TPM41 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.TrainerPokemon4 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
-            this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.TPM52 = new System.Windows.Forms.ComboBox();
+            this.TPM53 = new System.Windows.Forms.ComboBox();
+            this.TPM54 = new System.Windows.Forms.ComboBox();
+            this.TPM51 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox24 = new System.Windows.Forms.ComboBox();
+            this.TrainerPokemon5 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox25 = new System.Windows.Forms.ComboBox();
-            this.comboBox26 = new System.Windows.Forms.ComboBox();
-            this.comboBox27 = new System.Windows.Forms.ComboBox();
-            this.comboBox28 = new System.Windows.Forms.ComboBox();
+            this.TPM62 = new System.Windows.Forms.ComboBox();
+            this.TPM63 = new System.Windows.Forms.ComboBox();
+            this.TPM64 = new System.Windows.Forms.ComboBox();
+            this.TPM61 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.TrainerPokemon6 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.TrainerName = new System.Windows.Forms.TextBox();
-            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.TrainerLocation = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -266,69 +266,69 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Moves:";
             // 
-            // comboBox1
+            // TPM11
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(492, 203);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 20;
+            this.TPM11.FormattingEnabled = true;
+            this.TPM11.Location = new System.Drawing.Point(492, 203);
+            this.TPM11.Name = "TPM11";
+            this.TPM11.Size = new System.Drawing.Size(121, 21);
+            this.TPM11.TabIndex = 20;
             // 
-            // comboBox2
+            // TPM14
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(619, 230);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 21;
+            this.TPM14.FormattingEnabled = true;
+            this.TPM14.Location = new System.Drawing.Point(619, 230);
+            this.TPM14.Name = "TPM14";
+            this.TPM14.Size = new System.Drawing.Size(121, 21);
+            this.TPM14.TabIndex = 21;
             // 
-            // comboBox3
+            // TPM13
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(492, 230);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 22;
+            this.TPM13.FormattingEnabled = true;
+            this.TPM13.Location = new System.Drawing.Point(492, 230);
+            this.TPM13.Name = "TPM13";
+            this.TPM13.Size = new System.Drawing.Size(121, 21);
+            this.TPM13.TabIndex = 22;
             // 
-            // comboBox4
+            // TPM12
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(619, 203);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 23;
+            this.TPM12.FormattingEnabled = true;
+            this.TPM12.Location = new System.Drawing.Point(619, 203);
+            this.TPM12.Name = "TPM12";
+            this.TPM12.Size = new System.Drawing.Size(121, 21);
+            this.TPM12.TabIndex = 23;
             // 
-            // comboBox5
+            // TPM22
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(619, 297);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 21);
-            this.comboBox5.TabIndex = 30;
+            this.TPM22.FormattingEnabled = true;
+            this.TPM22.Location = new System.Drawing.Point(619, 297);
+            this.TPM22.Name = "TPM22";
+            this.TPM22.Size = new System.Drawing.Size(121, 21);
+            this.TPM22.TabIndex = 30;
             // 
-            // comboBox6
+            // TPM23
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(492, 324);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 21);
-            this.comboBox6.TabIndex = 29;
+            this.TPM23.FormattingEnabled = true;
+            this.TPM23.Location = new System.Drawing.Point(492, 324);
+            this.TPM23.Name = "TPM23";
+            this.TPM23.Size = new System.Drawing.Size(121, 21);
+            this.TPM23.TabIndex = 29;
             // 
-            // comboBox7
+            // TPM24
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(619, 324);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(121, 21);
-            this.comboBox7.TabIndex = 28;
+            this.TPM24.FormattingEnabled = true;
+            this.TPM24.Location = new System.Drawing.Point(619, 324);
+            this.TPM24.Name = "TPM24";
+            this.TPM24.Size = new System.Drawing.Size(121, 21);
+            this.TPM24.TabIndex = 28;
             // 
-            // comboBox8
+            // TPM21
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(492, 297);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(121, 21);
-            this.comboBox8.TabIndex = 27;
+            this.TPM21.FormattingEnabled = true;
+            this.TPM21.Location = new System.Drawing.Point(492, 297);
+            this.TPM21.Name = "TPM21";
+            this.TPM21.Size = new System.Drawing.Size(121, 21);
+            this.TPM21.TabIndex = 27;
             // 
             // label3
             // 
@@ -339,13 +339,13 @@
             this.label3.TabIndex = 26;
             this.label3.Text = "Moves:";
             // 
-            // comboBox9
+            // TrainerPokemon2
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(492, 257);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(121, 21);
-            this.comboBox9.TabIndex = 25;
+            this.TrainerPokemon2.FormattingEnabled = true;
+            this.TrainerPokemon2.Location = new System.Drawing.Point(492, 257);
+            this.TrainerPokemon2.Name = "TrainerPokemon2";
+            this.TrainerPokemon2.Size = new System.Drawing.Size(121, 21);
+            this.TrainerPokemon2.TabIndex = 25;
             // 
             // label4
             // 
@@ -356,37 +356,37 @@
             this.label4.TabIndex = 24;
             this.label4.Text = "Pokemon 2:";
             // 
-            // comboBox10
+            // TPM32
             // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(619, 391);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(121, 21);
-            this.comboBox10.TabIndex = 37;
+            this.TPM32.FormattingEnabled = true;
+            this.TPM32.Location = new System.Drawing.Point(619, 391);
+            this.TPM32.Name = "TPM32";
+            this.TPM32.Size = new System.Drawing.Size(121, 21);
+            this.TPM32.TabIndex = 37;
             // 
-            // comboBox11
+            // TPM33
             // 
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(492, 418);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(121, 21);
-            this.comboBox11.TabIndex = 36;
+            this.TPM33.FormattingEnabled = true;
+            this.TPM33.Location = new System.Drawing.Point(492, 418);
+            this.TPM33.Name = "TPM33";
+            this.TPM33.Size = new System.Drawing.Size(121, 21);
+            this.TPM33.TabIndex = 36;
             // 
-            // comboBox12
+            // TPM34
             // 
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(619, 418);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(121, 21);
-            this.comboBox12.TabIndex = 35;
+            this.TPM34.FormattingEnabled = true;
+            this.TPM34.Location = new System.Drawing.Point(619, 418);
+            this.TPM34.Name = "TPM34";
+            this.TPM34.Size = new System.Drawing.Size(121, 21);
+            this.TPM34.TabIndex = 35;
             // 
-            // comboBox13
+            // TPM31
             // 
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(492, 391);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(121, 21);
-            this.comboBox13.TabIndex = 34;
+            this.TPM31.FormattingEnabled = true;
+            this.TPM31.Location = new System.Drawing.Point(492, 391);
+            this.TPM31.Name = "TPM31";
+            this.TPM31.Size = new System.Drawing.Size(121, 21);
+            this.TPM31.TabIndex = 34;
             // 
             // label5
             // 
@@ -397,13 +397,13 @@
             this.label5.TabIndex = 33;
             this.label5.Text = "Moves:";
             // 
-            // comboBox14
+            // PokemonTrainer3
             // 
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(492, 351);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(121, 21);
-            this.comboBox14.TabIndex = 32;
+            this.PokemonTrainer3.FormattingEnabled = true;
+            this.PokemonTrainer3.Location = new System.Drawing.Point(492, 351);
+            this.PokemonTrainer3.Name = "PokemonTrainer3";
+            this.PokemonTrainer3.Size = new System.Drawing.Size(121, 21);
+            this.PokemonTrainer3.TabIndex = 32;
             // 
             // label6
             // 
@@ -414,37 +414,37 @@
             this.label6.TabIndex = 31;
             this.label6.Text = "Pokemon 3:";
             // 
-            // comboBox15
+            // TPM42
             // 
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(945, 203);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(121, 21);
-            this.comboBox15.TabIndex = 44;
+            this.TPM42.FormattingEnabled = true;
+            this.TPM42.Location = new System.Drawing.Point(945, 203);
+            this.TPM42.Name = "TPM42";
+            this.TPM42.Size = new System.Drawing.Size(121, 21);
+            this.TPM42.TabIndex = 44;
             // 
-            // comboBox16
+            // TPM43
             // 
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Location = new System.Drawing.Point(818, 230);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(121, 21);
-            this.comboBox16.TabIndex = 43;
+            this.TPM43.FormattingEnabled = true;
+            this.TPM43.Location = new System.Drawing.Point(818, 230);
+            this.TPM43.Name = "TPM43";
+            this.TPM43.Size = new System.Drawing.Size(121, 21);
+            this.TPM43.TabIndex = 43;
             // 
-            // comboBox17
+            // TPM44
             // 
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Location = new System.Drawing.Point(945, 230);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(121, 21);
-            this.comboBox17.TabIndex = 42;
+            this.TPM44.FormattingEnabled = true;
+            this.TPM44.Location = new System.Drawing.Point(945, 230);
+            this.TPM44.Name = "TPM44";
+            this.TPM44.Size = new System.Drawing.Size(121, 21);
+            this.TPM44.TabIndex = 42;
             // 
-            // comboBox18
+            // TPM41
             // 
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Location = new System.Drawing.Point(818, 203);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(121, 21);
-            this.comboBox18.TabIndex = 41;
+            this.TPM41.FormattingEnabled = true;
+            this.TPM41.Location = new System.Drawing.Point(818, 203);
+            this.TPM41.Name = "TPM41";
+            this.TPM41.Size = new System.Drawing.Size(121, 21);
+            this.TPM41.TabIndex = 41;
             // 
             // label7
             // 
@@ -455,13 +455,13 @@
             this.label7.TabIndex = 40;
             this.label7.Text = "Moves:";
             // 
-            // comboBox19
+            // TrainerPokemon4
             // 
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(818, 163);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(121, 21);
-            this.comboBox19.TabIndex = 39;
+            this.TrainerPokemon4.FormattingEnabled = true;
+            this.TrainerPokemon4.Location = new System.Drawing.Point(818, 163);
+            this.TrainerPokemon4.Name = "TrainerPokemon4";
+            this.TrainerPokemon4.Size = new System.Drawing.Size(121, 21);
+            this.TrainerPokemon4.TabIndex = 39;
             // 
             // label8
             // 
@@ -472,37 +472,37 @@
             this.label8.TabIndex = 38;
             this.label8.Text = "Pokemon 4:";
             // 
-            // comboBox20
+            // TPM52
             // 
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(945, 297);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(121, 21);
-            this.comboBox20.TabIndex = 51;
+            this.TPM52.FormattingEnabled = true;
+            this.TPM52.Location = new System.Drawing.Point(945, 297);
+            this.TPM52.Name = "TPM52";
+            this.TPM52.Size = new System.Drawing.Size(121, 21);
+            this.TPM52.TabIndex = 51;
             // 
-            // comboBox21
+            // TPM53
             // 
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Location = new System.Drawing.Point(818, 324);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(121, 21);
-            this.comboBox21.TabIndex = 50;
+            this.TPM53.FormattingEnabled = true;
+            this.TPM53.Location = new System.Drawing.Point(818, 324);
+            this.TPM53.Name = "TPM53";
+            this.TPM53.Size = new System.Drawing.Size(121, 21);
+            this.TPM53.TabIndex = 50;
             // 
-            // comboBox22
+            // TPM54
             // 
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Location = new System.Drawing.Point(945, 324);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(121, 21);
-            this.comboBox22.TabIndex = 49;
+            this.TPM54.FormattingEnabled = true;
+            this.TPM54.Location = new System.Drawing.Point(945, 324);
+            this.TPM54.Name = "TPM54";
+            this.TPM54.Size = new System.Drawing.Size(121, 21);
+            this.TPM54.TabIndex = 49;
             // 
-            // comboBox23
+            // TPM51
             // 
-            this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Location = new System.Drawing.Point(818, 297);
-            this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(121, 21);
-            this.comboBox23.TabIndex = 48;
+            this.TPM51.FormattingEnabled = true;
+            this.TPM51.Location = new System.Drawing.Point(818, 297);
+            this.TPM51.Name = "TPM51";
+            this.TPM51.Size = new System.Drawing.Size(121, 21);
+            this.TPM51.TabIndex = 48;
             // 
             // label9
             // 
@@ -513,13 +513,13 @@
             this.label9.TabIndex = 47;
             this.label9.Text = "Moves:";
             // 
-            // comboBox24
+            // TrainerPokemon5
             // 
-            this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Location = new System.Drawing.Point(818, 257);
-            this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(121, 21);
-            this.comboBox24.TabIndex = 46;
+            this.TrainerPokemon5.FormattingEnabled = true;
+            this.TrainerPokemon5.Location = new System.Drawing.Point(818, 257);
+            this.TrainerPokemon5.Name = "TrainerPokemon5";
+            this.TrainerPokemon5.Size = new System.Drawing.Size(121, 21);
+            this.TrainerPokemon5.TabIndex = 46;
             // 
             // label10
             // 
@@ -530,37 +530,37 @@
             this.label10.TabIndex = 45;
             this.label10.Text = "Pokemon 5:";
             // 
-            // comboBox25
+            // TPM62
             // 
-            this.comboBox25.FormattingEnabled = true;
-            this.comboBox25.Location = new System.Drawing.Point(945, 396);
-            this.comboBox25.Name = "comboBox25";
-            this.comboBox25.Size = new System.Drawing.Size(121, 21);
-            this.comboBox25.TabIndex = 58;
+            this.TPM62.FormattingEnabled = true;
+            this.TPM62.Location = new System.Drawing.Point(945, 396);
+            this.TPM62.Name = "TPM62";
+            this.TPM62.Size = new System.Drawing.Size(121, 21);
+            this.TPM62.TabIndex = 58;
             // 
-            // comboBox26
+            // TPM63
             // 
-            this.comboBox26.FormattingEnabled = true;
-            this.comboBox26.Location = new System.Drawing.Point(818, 423);
-            this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(121, 21);
-            this.comboBox26.TabIndex = 57;
+            this.TPM63.FormattingEnabled = true;
+            this.TPM63.Location = new System.Drawing.Point(818, 423);
+            this.TPM63.Name = "TPM63";
+            this.TPM63.Size = new System.Drawing.Size(121, 21);
+            this.TPM63.TabIndex = 57;
             // 
-            // comboBox27
+            // TPM64
             // 
-            this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Location = new System.Drawing.Point(945, 423);
-            this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(121, 21);
-            this.comboBox27.TabIndex = 56;
+            this.TPM64.FormattingEnabled = true;
+            this.TPM64.Location = new System.Drawing.Point(945, 423);
+            this.TPM64.Name = "TPM64";
+            this.TPM64.Size = new System.Drawing.Size(121, 21);
+            this.TPM64.TabIndex = 56;
             // 
-            // comboBox28
+            // TPM61
             // 
-            this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.Location = new System.Drawing.Point(818, 396);
-            this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(121, 21);
-            this.comboBox28.TabIndex = 55;
+            this.TPM61.FormattingEnabled = true;
+            this.TPM61.Location = new System.Drawing.Point(818, 396);
+            this.TPM61.Name = "TPM61";
+            this.TPM61.Size = new System.Drawing.Size(121, 21);
+            this.TPM61.TabIndex = 55;
             // 
             // label11
             // 
@@ -571,13 +571,13 @@
             this.label11.TabIndex = 54;
             this.label11.Text = "Moves:";
             // 
-            // comboBox29
+            // TrainerPokemon6
             // 
-            this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Location = new System.Drawing.Point(818, 356);
-            this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(121, 21);
-            this.comboBox29.TabIndex = 53;
+            this.TrainerPokemon6.FormattingEnabled = true;
+            this.TrainerPokemon6.Location = new System.Drawing.Point(818, 356);
+            this.TrainerPokemon6.Name = "TrainerPokemon6";
+            this.TrainerPokemon6.Size = new System.Drawing.Size(121, 21);
+            this.TrainerPokemon6.TabIndex = 53;
             // 
             // label12
             // 
@@ -595,13 +595,13 @@
             this.TrainerName.Size = new System.Drawing.Size(100, 20);
             this.TrainerName.TabIndex = 59;
             // 
-            // comboBox30
+            // TrainerLocation
             // 
-            this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.Location = new System.Drawing.Point(492, 36);
-            this.comboBox30.Name = "comboBox30";
-            this.comboBox30.Size = new System.Drawing.Size(121, 21);
-            this.comboBox30.TabIndex = 60;
+            this.TrainerLocation.FormattingEnabled = true;
+            this.TrainerLocation.Location = new System.Drawing.Point(492, 36);
+            this.TrainerLocation.Name = "TrainerLocation";
+            this.TrainerLocation.Size = new System.Drawing.Size(121, 21);
+            this.TrainerLocation.TabIndex = 60;
             // 
             // button1
             // 
@@ -618,47 +618,47 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1074, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox30);
+            this.Controls.Add(this.TrainerLocation);
             this.Controls.Add(this.TrainerName);
-            this.Controls.Add(this.comboBox25);
-            this.Controls.Add(this.comboBox26);
-            this.Controls.Add(this.comboBox27);
-            this.Controls.Add(this.comboBox28);
+            this.Controls.Add(this.TPM62);
+            this.Controls.Add(this.TPM63);
+            this.Controls.Add(this.TPM64);
+            this.Controls.Add(this.TPM61);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBox29);
+            this.Controls.Add(this.TrainerPokemon6);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.comboBox20);
-            this.Controls.Add(this.comboBox21);
-            this.Controls.Add(this.comboBox22);
-            this.Controls.Add(this.comboBox23);
+            this.Controls.Add(this.TPM52);
+            this.Controls.Add(this.TPM53);
+            this.Controls.Add(this.TPM54);
+            this.Controls.Add(this.TPM51);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox24);
+            this.Controls.Add(this.TrainerPokemon5);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBox15);
-            this.Controls.Add(this.comboBox16);
-            this.Controls.Add(this.comboBox17);
-            this.Controls.Add(this.comboBox18);
+            this.Controls.Add(this.TPM42);
+            this.Controls.Add(this.TPM43);
+            this.Controls.Add(this.TPM44);
+            this.Controls.Add(this.TPM41);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox19);
+            this.Controls.Add(this.TrainerPokemon4);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox10);
-            this.Controls.Add(this.comboBox11);
-            this.Controls.Add(this.comboBox12);
-            this.Controls.Add(this.comboBox13);
+            this.Controls.Add(this.TPM32);
+            this.Controls.Add(this.TPM33);
+            this.Controls.Add(this.TPM34);
+            this.Controls.Add(this.TPM31);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox14);
+            this.Controls.Add(this.PokemonTrainer3);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox8);
+            this.Controls.Add(this.TPM22);
+            this.Controls.Add(this.TPM23);
+            this.Controls.Add(this.TPM24);
+            this.Controls.Add(this.TPM21);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox9);
+            this.Controls.Add(this.TrainerPokemon2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.TPM12);
+            this.Controls.Add(this.TPM13);
+            this.Controls.Add(this.TPM14);
+            this.Controls.Add(this.TPM11);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TrainerPokemon1);
             this.Controls.Add(this.label1);
@@ -708,47 +708,47 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox TrainerPokemon1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox TPM11;
+        private System.Windows.Forms.ComboBox TPM14;
+        private System.Windows.Forms.ComboBox TPM13;
+        private System.Windows.Forms.ComboBox TPM12;
+        private System.Windows.Forms.ComboBox TPM22;
+        private System.Windows.Forms.ComboBox TPM23;
+        private System.Windows.Forms.ComboBox TPM24;
+        private System.Windows.Forms.ComboBox TPM21;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox TrainerPokemon2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.ComboBox TPM32;
+        private System.Windows.Forms.ComboBox TPM33;
+        private System.Windows.Forms.ComboBox TPM34;
+        private System.Windows.Forms.ComboBox TPM31;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.ComboBox PokemonTrainer3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.ComboBox comboBox17;
-        private System.Windows.Forms.ComboBox comboBox18;
+        private System.Windows.Forms.ComboBox TPM42;
+        private System.Windows.Forms.ComboBox TPM43;
+        private System.Windows.Forms.ComboBox TPM44;
+        private System.Windows.Forms.ComboBox TPM41;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.ComboBox TrainerPokemon4;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.ComboBox comboBox21;
-        private System.Windows.Forms.ComboBox comboBox22;
-        private System.Windows.Forms.ComboBox comboBox23;
+        private System.Windows.Forms.ComboBox TPM52;
+        private System.Windows.Forms.ComboBox TPM53;
+        private System.Windows.Forms.ComboBox TPM54;
+        private System.Windows.Forms.ComboBox TPM51;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox24;
+        private System.Windows.Forms.ComboBox TrainerPokemon5;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox25;
-        private System.Windows.Forms.ComboBox comboBox26;
-        private System.Windows.Forms.ComboBox comboBox27;
-        private System.Windows.Forms.ComboBox comboBox28;
+        private System.Windows.Forms.ComboBox TPM62;
+        private System.Windows.Forms.ComboBox TPM63;
+        private System.Windows.Forms.ComboBox TPM64;
+        private System.Windows.Forms.ComboBox TPM61;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox29;
+        private System.Windows.Forms.ComboBox TrainerPokemon6;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox TrainerName;
-        private System.Windows.Forms.ComboBox comboBox30;
+        private System.Windows.Forms.ComboBox TrainerLocation;
         private System.Windows.Forms.Button button1;
     }
 }
