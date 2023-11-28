@@ -23,7 +23,6 @@ namespace PokemonTrainerDatabase
         {
             InitializeComponent();
             ConnectionString = ConfigurationManager.ConnectionStrings["PokemonTrainerDatabase.Properties.Settings.PokemonTrainerDatabaseTablesConnectionString"].ConnectionString;
-            PopulateResults();
             PopulateLocationBox();
             PopulateTypeBox();
             PopulateMovesBox();
@@ -36,34 +35,6 @@ namespace PokemonTrainerDatabase
             PopulateTrainerPokemonBox4();
             PopulateTrainerPokemonBox5();
             PopulateTrainerPokemonBox6();
-        }
-
-        private void PopulateResults()
-        {
-            using (Connection = new SqlConnection(ConnectionString))
-            {
-                string query = "SELECT * FROM Trainers WHERE 1 = 1";
-
-                if (MenuLocation.SelectedIndex != -1)
-                {
-                    query += $" AND Trainers.LocationID = '{MenuLocation.SelectedIndex}'";
-                }
-                /*
-                if (MenuType.SelectedIndex != -1)
-                {
-                    query += $" AND Pokemon.PrimaryTypeID = {MenuType.SelectedIndex} OR Pokemon.SecondaryTypeID = {MenuType.SelectedIndex}";
-                }
-                */
-                using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
-                {
-                    DataTable TrainerTable = new DataTable();
-                    adapter.Fill(TrainerTable);
-
-                    ResultsBox.DisplayMember = "TrainerName";
-                    ResultsBox.ValueMember = "Id";
-                    ResultsBox.DataSource = TrainerTable;
-                }
-            }
         }
 
         private void PopulateLocationBox()
@@ -193,7 +164,6 @@ namespace PokemonTrainerDatabase
                     TrainerPokemon1.DisplayMember = "PokemonName";
                     TrainerPokemon1.ValueMember = "Id";
                     TrainerPokemon1.DataSource = PokemonTable;
-                    TrainerPokemon1.SelectedIndex = -1;
                 }
             }
         }
@@ -310,17 +280,64 @@ namespace PokemonTrainerDatabase
                 TPM14.Enabled = true;
                 using (Connection = new SqlConnection(ConnectionString))
                 {
-                    string query = "SELECT * FROM LearnableMoves WHERE 1 = 1";
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
 
                     using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
                     {
-                        DataTable PokemonTable = new DataTable();
-                        adapter.Fill(PokemonTable);
+                        DataTable PokemonTable1 = new DataTable();
+                        adapter.Fill(PokemonTable1);
 
-                        TPM11.DisplayMember = "MoveID";
+                        TPM11.DisplayMember = "MoveName";
                         TPM11.ValueMember = "Id";
-                        TPM11.DataSource = PokemonTable;
-                        TPM11.SelectedIndex = -1;
+                        TPM11.DataSource = PokemonTable1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable2 = new DataTable();
+                        adapter.Fill(PokemonTable2);
+
+                        TPM12.DisplayMember = "MoveName";
+                        TPM12.ValueMember = "Id";
+                        TPM12.DataSource = PokemonTable2;
+                        TPM12.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable3 = new DataTable();
+                        adapter.Fill(PokemonTable3);
+
+                        TPM13.DisplayMember = "MoveName";
+                        TPM13.ValueMember = "Id";
+                        TPM13.DataSource = PokemonTable3;
+                        TPM13.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable4 = new DataTable();
+                        adapter.Fill(PokemonTable4);
+
+                        TPM14.DisplayMember = "MoveName";
+                        TPM14.ValueMember = "Id";
+                        TPM14.DataSource = PokemonTable4;
+                        TPM14.SelectedIndex = -1;
                     }
                 }
             }
@@ -341,6 +358,69 @@ namespace PokemonTrainerDatabase
                 TPM22.Enabled = true;
                 TPM23.Enabled = true;
                 TPM24.Enabled = true;
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable1 = new DataTable();
+                        adapter.Fill(PokemonTable1);
+
+                        TPM21.DisplayMember = "MoveName";
+                        TPM21.ValueMember = "Id";
+                        TPM21.DataSource = PokemonTable1;
+                        TPM21.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable2 = new DataTable();
+                        adapter.Fill(PokemonTable2);
+
+                        TPM22.DisplayMember = "MoveName";
+                        TPM22.ValueMember = "Id";
+                        TPM22.DataSource = PokemonTable2;
+                        TPM22.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable3 = new DataTable();
+                        adapter.Fill(PokemonTable3);
+
+                        TPM23.DisplayMember = "MoveName";
+                        TPM23.ValueMember = "Id";
+                        TPM23.DataSource = PokemonTable3;
+                        TPM23.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable4 = new DataTable();
+                        adapter.Fill(PokemonTable4);
+
+                        TPM24.DisplayMember = "MoveName";
+                        TPM24.ValueMember = "Id";
+                        TPM24.DataSource = PokemonTable4;
+                        TPM24.SelectedIndex = -1;
+                    }
+                }
             }
         }
 
@@ -359,6 +439,69 @@ namespace PokemonTrainerDatabase
                 TPM32.Enabled = true;
                 TPM33.Enabled = true;
                 TPM34.Enabled = true;
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable1 = new DataTable();
+                        adapter.Fill(PokemonTable1);
+
+                        TPM31.DisplayMember = "MoveName";
+                        TPM31.ValueMember = "Id";
+                        TPM31.DataSource = PokemonTable1;
+                        TPM31.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable2 = new DataTable();
+                        adapter.Fill(PokemonTable2);
+
+                        TPM32.DisplayMember = "MoveName";
+                        TPM32.ValueMember = "Id";
+                        TPM32.DataSource = PokemonTable2;
+                        TPM32.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable3 = new DataTable();
+                        adapter.Fill(PokemonTable3);
+
+                        TPM33.DisplayMember = "MoveName";
+                        TPM33.ValueMember = "Id";
+                        TPM33.DataSource = PokemonTable3;
+                        TPM33.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable4 = new DataTable();
+                        adapter.Fill(PokemonTable4);
+
+                        TPM34.DisplayMember = "MoveName";
+                        TPM34.ValueMember = "Id";
+                        TPM34.DataSource = PokemonTable4;
+                        TPM34.SelectedIndex = -1;
+                    }
+                }
             }
         }
 
@@ -377,6 +520,69 @@ namespace PokemonTrainerDatabase
                 TPM42.Enabled = true;
                 TPM43.Enabled = true;
                 TPM44.Enabled = true;
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable1 = new DataTable();
+                        adapter.Fill(PokemonTable1);
+
+                        TPM41.DisplayMember = "MoveName";
+                        TPM41.ValueMember = "Id";
+                        TPM41.DataSource = PokemonTable1;
+                        TPM41.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable2 = new DataTable();
+                        adapter.Fill(PokemonTable2);
+
+                        TPM42.DisplayMember = "MoveName";
+                        TPM42.ValueMember = "Id";
+                        TPM42.DataSource = PokemonTable2;
+                        TPM42.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable3 = new DataTable();
+                        adapter.Fill(PokemonTable3);
+
+                        TPM43.DisplayMember = "MoveName";
+                        TPM43.ValueMember = "Id";
+                        TPM43.DataSource = PokemonTable3;
+                        TPM43.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable4 = new DataTable();
+                        adapter.Fill(PokemonTable4);
+
+                        TPM44.DisplayMember = "MoveName";
+                        TPM44.ValueMember = "Id";
+                        TPM44.DataSource = PokemonTable4;
+                        TPM44.SelectedIndex = -1;
+                    }
+                }
             }
         }
 
@@ -395,6 +601,69 @@ namespace PokemonTrainerDatabase
                 TPM52.Enabled = true;
                 TPM53.Enabled = true;
                 TPM54.Enabled = true;
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable1 = new DataTable();
+                        adapter.Fill(PokemonTable1);
+
+                        TPM51.DisplayMember = "MoveName";
+                        TPM51.ValueMember = "Id";
+                        TPM51.DataSource = PokemonTable1;
+                        TPM51.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable2 = new DataTable();
+                        adapter.Fill(PokemonTable2);
+
+                        TPM52.DisplayMember = "MoveName";
+                        TPM52.ValueMember = "Id";
+                        TPM52.DataSource = PokemonTable2;
+                        TPM52.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable3 = new DataTable();
+                        adapter.Fill(PokemonTable3);
+
+                        TPM53.DisplayMember = "MoveName";
+                        TPM53.ValueMember = "Id";
+                        TPM53.DataSource = PokemonTable3;
+                        TPM53.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable4 = new DataTable();
+                        adapter.Fill(PokemonTable4);
+
+                        TPM54.DisplayMember = "MoveName";
+                        TPM54.ValueMember = "Id";
+                        TPM54.DataSource = PokemonTable4;
+                        TPM54.SelectedIndex = -1;
+                    }
+                }
             }
         }
 
@@ -413,6 +682,69 @@ namespace PokemonTrainerDatabase
                 TPM62.Enabled = true;
                 TPM63.Enabled = true;
                 TPM64.Enabled = true;
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable1 = new DataTable();
+                        adapter.Fill(PokemonTable1);
+
+                        TPM61.DisplayMember = "MoveName";
+                        TPM61.ValueMember = "Id";
+                        TPM61.DataSource = PokemonTable1;
+                        TPM61.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable2 = new DataTable();
+                        adapter.Fill(PokemonTable2);
+
+                        TPM62.DisplayMember = "MoveName";
+                        TPM62.ValueMember = "Id";
+                        TPM62.DataSource = PokemonTable2;
+                        TPM62.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable3 = new DataTable();
+                        adapter.Fill(PokemonTable3);
+
+                        TPM63.DisplayMember = "MoveName";
+                        TPM63.ValueMember = "Id";
+                        TPM63.DataSource = PokemonTable3;
+                        TPM63.SelectedIndex = -1;
+                    }
+                }
+
+                using (Connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT * FROM Moves JOIN LearnableMoves ON LearnableMoves.MoveID = Moves.MoveID JOIN Pokemon ON Pokemon.PokedexNumber = LearnableMoves.PokemonID WHERE 1 = 1";
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                    {
+                        DataTable PokemonTable4 = new DataTable();
+                        adapter.Fill(PokemonTable4);
+
+                        TPM64.DisplayMember = "MoveName";
+                        TPM64.ValueMember = "Id";
+                        TPM64.DataSource = PokemonTable4;
+                        TPM64.SelectedIndex = -1;
+                    }
+                }
             }
         }
 
@@ -420,11 +752,11 @@ namespace PokemonTrainerDatabase
         {
             if (TrainerName.Text != "")
             {
-                button1.Enabled = true;
+                AddTrainerButton.Enabled = true;
             }
             else
             {
-                button1.Enabled = false;
+                AddTrainerButton.Enabled = false;
             }
         }
 
@@ -543,6 +875,9 @@ namespace PokemonTrainerDatabase
             }
         }
 
+        private void AddTrainerButton_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

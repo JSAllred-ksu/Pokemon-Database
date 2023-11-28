@@ -89,7 +89,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.TrainerName = new System.Windows.Forms.TextBox();
             this.TrainerLocation = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.AddTrainerButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelFilter
@@ -203,6 +203,10 @@
             // ResultsBox
             // 
             this.ResultsBox.FormattingEnabled = true;
+            this.ResultsBox.Items.AddRange(new object[] {
+            "",
+            "",
+            ""});
             this.ResultsBox.Location = new System.Drawing.Point(75, 255);
             this.ResultsBox.Name = "ResultsBox";
             this.ResultsBox.ScrollAlwaysVisible = true;
@@ -639,22 +643,23 @@
             this.TrainerLocation.Size = new System.Drawing.Size(121, 21);
             this.TrainerLocation.TabIndex = 60;
             // 
-            // button1
+            // AddTrainerButton
             // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(737, 29);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(325, 64);
-            this.button1.TabIndex = 61;
-            this.button1.Text = "Add your Trainer!";
-            this.button1.UseVisualStyleBackColor = true;
+            this.AddTrainerButton.Enabled = false;
+            this.AddTrainerButton.Location = new System.Drawing.Point(737, 29);
+            this.AddTrainerButton.Name = "AddTrainerButton";
+            this.AddTrainerButton.Size = new System.Drawing.Size(325, 64);
+            this.AddTrainerButton.TabIndex = 61;
+            this.AddTrainerButton.Text = "Add your Trainer!";
+            this.AddTrainerButton.UseVisualStyleBackColor = true;
+            this.AddTrainerButton.Click += new System.EventHandler(this.AddTrainerButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1074, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AddTrainerButton);
             this.Controls.Add(this.TrainerLocation);
             this.Controls.Add(this.TrainerName);
             this.Controls.Add(this.TPM62);
@@ -786,7 +791,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox TrainerName;
         private System.Windows.Forms.ComboBox TrainerLocation;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button AddTrainerButton;
     }
 }
 
