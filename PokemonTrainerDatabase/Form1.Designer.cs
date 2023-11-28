@@ -64,7 +64,7 @@
             this.TPM34 = new System.Windows.Forms.ComboBox();
             this.TPM31 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.PokemonTrainer3 = new System.Windows.Forms.ComboBox();
+            this.TrainerPokemon3 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.TPM42 = new System.Windows.Forms.ComboBox();
             this.TPM43 = new System.Windows.Forms.ComboBox();
@@ -256,6 +256,7 @@
             this.TrainerPokemon1.Name = "TrainerPokemon1";
             this.TrainerPokemon1.Size = new System.Drawing.Size(121, 21);
             this.TrainerPokemon1.TabIndex = 18;
+            this.TrainerPokemon1.SelectedIndexChanged += new System.EventHandler(this.TrainerPokemon1_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -268,6 +269,7 @@
             // 
             // TPM11
             // 
+            this.TPM11.Enabled = false;
             this.TPM11.FormattingEnabled = true;
             this.TPM11.Location = new System.Drawing.Point(492, 203);
             this.TPM11.Name = "TPM11";
@@ -276,6 +278,7 @@
             // 
             // TPM14
             // 
+            this.TPM14.Enabled = false;
             this.TPM14.FormattingEnabled = true;
             this.TPM14.Location = new System.Drawing.Point(619, 230);
             this.TPM14.Name = "TPM14";
@@ -284,6 +287,7 @@
             // 
             // TPM13
             // 
+            this.TPM13.Enabled = false;
             this.TPM13.FormattingEnabled = true;
             this.TPM13.Location = new System.Drawing.Point(492, 230);
             this.TPM13.Name = "TPM13";
@@ -292,6 +296,7 @@
             // 
             // TPM12
             // 
+            this.TPM12.Enabled = false;
             this.TPM12.FormattingEnabled = true;
             this.TPM12.Location = new System.Drawing.Point(619, 203);
             this.TPM12.Name = "TPM12";
@@ -300,6 +305,7 @@
             // 
             // TPM22
             // 
+            this.TPM22.Enabled = false;
             this.TPM22.FormattingEnabled = true;
             this.TPM22.Location = new System.Drawing.Point(619, 297);
             this.TPM22.Name = "TPM22";
@@ -308,6 +314,7 @@
             // 
             // TPM23
             // 
+            this.TPM23.Enabled = false;
             this.TPM23.FormattingEnabled = true;
             this.TPM23.Location = new System.Drawing.Point(492, 324);
             this.TPM23.Name = "TPM23";
@@ -316,6 +323,7 @@
             // 
             // TPM24
             // 
+            this.TPM24.Enabled = false;
             this.TPM24.FormattingEnabled = true;
             this.TPM24.Location = new System.Drawing.Point(619, 324);
             this.TPM24.Name = "TPM24";
@@ -324,6 +332,7 @@
             // 
             // TPM21
             // 
+            this.TPM21.Enabled = false;
             this.TPM21.FormattingEnabled = true;
             this.TPM21.Location = new System.Drawing.Point(492, 297);
             this.TPM21.Name = "TPM21";
@@ -346,6 +355,7 @@
             this.TrainerPokemon2.Name = "TrainerPokemon2";
             this.TrainerPokemon2.Size = new System.Drawing.Size(121, 21);
             this.TrainerPokemon2.TabIndex = 25;
+            this.TrainerPokemon2.SelectedIndexChanged += new System.EventHandler(this.TrainerPokemon2_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -358,6 +368,7 @@
             // 
             // TPM32
             // 
+            this.TPM32.Enabled = false;
             this.TPM32.FormattingEnabled = true;
             this.TPM32.Location = new System.Drawing.Point(619, 391);
             this.TPM32.Name = "TPM32";
@@ -366,6 +377,7 @@
             // 
             // TPM33
             // 
+            this.TPM33.Enabled = false;
             this.TPM33.FormattingEnabled = true;
             this.TPM33.Location = new System.Drawing.Point(492, 418);
             this.TPM33.Name = "TPM33";
@@ -374,6 +386,7 @@
             // 
             // TPM34
             // 
+            this.TPM34.Enabled = false;
             this.TPM34.FormattingEnabled = true;
             this.TPM34.Location = new System.Drawing.Point(619, 418);
             this.TPM34.Name = "TPM34";
@@ -382,6 +395,7 @@
             // 
             // TPM31
             // 
+            this.TPM31.Enabled = false;
             this.TPM31.FormattingEnabled = true;
             this.TPM31.Location = new System.Drawing.Point(492, 391);
             this.TPM31.Name = "TPM31";
@@ -397,13 +411,14 @@
             this.label5.TabIndex = 33;
             this.label5.Text = "Moves:";
             // 
-            // PokemonTrainer3
+            // TrainerPokemon3
             // 
-            this.PokemonTrainer3.FormattingEnabled = true;
-            this.PokemonTrainer3.Location = new System.Drawing.Point(492, 351);
-            this.PokemonTrainer3.Name = "PokemonTrainer3";
-            this.PokemonTrainer3.Size = new System.Drawing.Size(121, 21);
-            this.PokemonTrainer3.TabIndex = 32;
+            this.TrainerPokemon3.FormattingEnabled = true;
+            this.TrainerPokemon3.Location = new System.Drawing.Point(492, 351);
+            this.TrainerPokemon3.Name = "TrainerPokemon3";
+            this.TrainerPokemon3.Size = new System.Drawing.Size(121, 21);
+            this.TrainerPokemon3.TabIndex = 32;
+            this.TrainerPokemon3.SelectedIndexChanged += new System.EventHandler(this.TrainerPokemon3_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -416,6 +431,7 @@
             // 
             // TPM42
             // 
+            this.TPM42.Enabled = false;
             this.TPM42.FormattingEnabled = true;
             this.TPM42.Location = new System.Drawing.Point(945, 203);
             this.TPM42.Name = "TPM42";
@@ -424,6 +440,7 @@
             // 
             // TPM43
             // 
+            this.TPM43.Enabled = false;
             this.TPM43.FormattingEnabled = true;
             this.TPM43.Location = new System.Drawing.Point(818, 230);
             this.TPM43.Name = "TPM43";
@@ -432,6 +449,7 @@
             // 
             // TPM44
             // 
+            this.TPM44.Enabled = false;
             this.TPM44.FormattingEnabled = true;
             this.TPM44.Location = new System.Drawing.Point(945, 230);
             this.TPM44.Name = "TPM44";
@@ -440,6 +458,7 @@
             // 
             // TPM41
             // 
+            this.TPM41.Enabled = false;
             this.TPM41.FormattingEnabled = true;
             this.TPM41.Location = new System.Drawing.Point(818, 203);
             this.TPM41.Name = "TPM41";
@@ -462,6 +481,7 @@
             this.TrainerPokemon4.Name = "TrainerPokemon4";
             this.TrainerPokemon4.Size = new System.Drawing.Size(121, 21);
             this.TrainerPokemon4.TabIndex = 39;
+            this.TrainerPokemon4.SelectedIndexChanged += new System.EventHandler(this.TrainerPokemon4_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -474,6 +494,7 @@
             // 
             // TPM52
             // 
+            this.TPM52.Enabled = false;
             this.TPM52.FormattingEnabled = true;
             this.TPM52.Location = new System.Drawing.Point(945, 297);
             this.TPM52.Name = "TPM52";
@@ -482,6 +503,7 @@
             // 
             // TPM53
             // 
+            this.TPM53.Enabled = false;
             this.TPM53.FormattingEnabled = true;
             this.TPM53.Location = new System.Drawing.Point(818, 324);
             this.TPM53.Name = "TPM53";
@@ -490,6 +512,7 @@
             // 
             // TPM54
             // 
+            this.TPM54.Enabled = false;
             this.TPM54.FormattingEnabled = true;
             this.TPM54.Location = new System.Drawing.Point(945, 324);
             this.TPM54.Name = "TPM54";
@@ -498,6 +521,7 @@
             // 
             // TPM51
             // 
+            this.TPM51.Enabled = false;
             this.TPM51.FormattingEnabled = true;
             this.TPM51.Location = new System.Drawing.Point(818, 297);
             this.TPM51.Name = "TPM51";
@@ -520,6 +544,7 @@
             this.TrainerPokemon5.Name = "TrainerPokemon5";
             this.TrainerPokemon5.Size = new System.Drawing.Size(121, 21);
             this.TrainerPokemon5.TabIndex = 46;
+            this.TrainerPokemon5.SelectedIndexChanged += new System.EventHandler(this.TrainerPokemon5_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -532,6 +557,7 @@
             // 
             // TPM62
             // 
+            this.TPM62.Enabled = false;
             this.TPM62.FormattingEnabled = true;
             this.TPM62.Location = new System.Drawing.Point(945, 396);
             this.TPM62.Name = "TPM62";
@@ -540,6 +566,7 @@
             // 
             // TPM63
             // 
+            this.TPM63.Enabled = false;
             this.TPM63.FormattingEnabled = true;
             this.TPM63.Location = new System.Drawing.Point(818, 423);
             this.TPM63.Name = "TPM63";
@@ -548,6 +575,7 @@
             // 
             // TPM64
             // 
+            this.TPM64.Enabled = false;
             this.TPM64.FormattingEnabled = true;
             this.TPM64.Location = new System.Drawing.Point(945, 423);
             this.TPM64.Name = "TPM64";
@@ -556,6 +584,7 @@
             // 
             // TPM61
             // 
+            this.TPM61.Enabled = false;
             this.TPM61.FormattingEnabled = true;
             this.TPM61.Location = new System.Drawing.Point(818, 396);
             this.TPM61.Name = "TPM61";
@@ -578,6 +607,7 @@
             this.TrainerPokemon6.Name = "TrainerPokemon6";
             this.TrainerPokemon6.Size = new System.Drawing.Size(121, 21);
             this.TrainerPokemon6.TabIndex = 53;
+            this.TrainerPokemon6.SelectedIndexChanged += new System.EventHandler(this.TrainerPokemon6_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -594,6 +624,7 @@
             this.TrainerName.Name = "TrainerName";
             this.TrainerName.Size = new System.Drawing.Size(100, 20);
             this.TrainerName.TabIndex = 59;
+            this.TrainerName.TextChanged += new System.EventHandler(this.TrainerName_TextChanged);
             // 
             // TrainerLocation
             // 
@@ -605,6 +636,7 @@
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(737, 29);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(325, 64);
@@ -646,7 +678,7 @@
             this.Controls.Add(this.TPM34);
             this.Controls.Add(this.TPM31);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.PokemonTrainer3);
+            this.Controls.Add(this.TrainerPokemon3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.TPM22);
             this.Controls.Add(this.TPM23);
@@ -724,7 +756,7 @@
         private System.Windows.Forms.ComboBox TPM34;
         private System.Windows.Forms.ComboBox TPM31;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox PokemonTrainer3;
+        private System.Windows.Forms.ComboBox TrainerPokemon3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox TPM42;
         private System.Windows.Forms.ComboBox TPM43;
