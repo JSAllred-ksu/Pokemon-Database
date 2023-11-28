@@ -877,7 +877,44 @@ namespace PokemonTrainerDatabase
 
         private void AddTrainerButton_Click(object sender, EventArgs e)
         {
+            string ConnectionString = "Data Source=dbo;Initial Catalog=Trainers;Integrated Security=True";
+            int max = 338;
+            string name = TrainerName.Text;
+            int loc = TrainerLocation.SelectedIndex + 1;
+            using (Connection = new SqlConnection(ConnectionString))
+            {
+                Connection.Open();
+                string query = "INSERT INTO [dbo].[Trainers] ([TrainerID], [TrainerName], [LocationID]) VALUES (@Value1, @Value2, @Value3)";
+                using (SqlCommand command = new SqlCommand(query, Connection))
+                {
+                    command.Parameters.AddWithValue("@Value1", max);
+                    command.Parameters.AddWithValue("@Value2", name);
+                    command.Parameters.AddWithValue("@Value3", loc);
+                }
+            }
+        }
 
+        private void ResultsBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            /*
+            using (Connection = new SqlConnection(ConnectionString))
+            {
+                string query = "SELECT * FROM TrainerPokemon JOIN Trainers ON Trainer.TrainerID = TrainerPokemon.TrainerID WHERE 1 = 1";
+
+                if (ResultsBox.SelectedIndex != 1)
+                {
+                    query += $" AND Trainers.TrainerName = '{ResultsBox.SelectedItem.ToString()}'";
+                }
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                {
+                    DataTable Pokemon = new DataTable();
+                    adapter.Fill(Pokemon);
+
+                    ResultPokemon1.Text = 
+                }
+            }
+            */
         }
     }
 }
