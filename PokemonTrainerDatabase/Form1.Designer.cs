@@ -117,6 +117,7 @@
             this.MenuLocation.Name = "MenuLocation";
             this.MenuLocation.Size = new System.Drawing.Size(121, 21);
             this.MenuLocation.TabIndex = 2;
+            this.MenuLocation.SelectedIndexChanged += new System.EventHandler(this.MenuLocation_SelectedIndexChanged);
             // 
             // labelTrainer
             // 
@@ -134,6 +135,7 @@
             this.MenuTrainers.Name = "MenuTrainers";
             this.MenuTrainers.Size = new System.Drawing.Size(121, 21);
             this.MenuTrainers.TabIndex = 4;
+            this.MenuTrainers.SelectedIndexChanged += new System.EventHandler(this.MenuTrainers_SelectedIndexChanged);
             // 
             // labelPokemon
             // 
@@ -151,6 +153,7 @@
             this.MenuPokemon.Name = "MenuPokemon";
             this.MenuPokemon.Size = new System.Drawing.Size(121, 21);
             this.MenuPokemon.TabIndex = 6;
+            this.MenuPokemon.SelectedIndexChanged += new System.EventHandler(this.MenuPokemon_SelectedIndexChanged);
             // 
             // labelType
             // 
@@ -168,6 +171,7 @@
             this.MenuType.Name = "MenuType";
             this.MenuType.Size = new System.Drawing.Size(121, 21);
             this.MenuType.TabIndex = 8;
+            this.MenuType.SelectedIndexChanged += new System.EventHandler(this.MenuType_SelectedIndexChanged);
             // 
             // labelMoves
             // 
@@ -185,6 +189,7 @@
             this.MenuMove.Name = "MenuMove";
             this.MenuMove.Size = new System.Drawing.Size(121, 21);
             this.MenuMove.TabIndex = 10;
+            this.MenuMove.SelectedIndexChanged += new System.EventHandler(this.MenuMove_SelectedIndexChanged);
             // 
             // labelResults
             // 
