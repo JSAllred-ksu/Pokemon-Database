@@ -26,32 +26,35 @@ namespace PokemonTrainerDatabase
             PopulateResults();
             PopulateLocationBox();
             PopulateTypeBox();
+            PopulateMovesBox();
+            PopulateTrainersBox();
+            PopulatePokemonBox();
         }
 
         private void PopulateResults()
         {
             using (Connection = new SqlConnection(ConnectionString))
             {
-                string query = "SELECT * FROM Pokemon WHERE 1 = 1";
+                string query = "SELECT * FROM Trainers JOIN TrainerPokemon ON TrainerPokemon.TrainerID = Trainers.TrainerID JOIN Pokemon ON Pokemon.PokedexNumber = TrainerPokemon.PokemonID WHERE 1 = 1";
 
                 if (MenuLocation.SelectedItem != null)
                 {
-                    query += $" AND Pokemon.Region = '{MenuLocation.SelectedItem}'";
+                    query += $" AND Trainers.LocationID = '{MenuLocation.SelectedItem}'";
                 }
-
+                
                 if (MenuType.SelectedItem != null)
                 {
                     query += $" AND Pokemon.PrimaryTypeID = {MenuType.SelectedItem} OR Pokemon.SecondaryTypeID = {MenuType.SelectedItem}";
                 }
-
+                
                 using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
                 {
-                    DataTable PokemonTable = new DataTable();
-                    adapter.Fill(PokemonTable);
+                    DataTable TrainerTable = new DataTable();
+                    adapter.Fill(TrainerTable);
 
-                    ResultsBox.DisplayMember = "PokemonName";
+                    ResultsBox.DisplayMember = "TrainerName";
                     ResultsBox.ValueMember = "Id";
-                    ResultsBox.DataSource = PokemonTable;
+                    ResultsBox.DataSource = TrainerTable;
                 }
             }
         }
@@ -74,6 +77,42 @@ namespace PokemonTrainerDatabase
             }
         }
 
+        private void PopulateTrainersBox()
+        {
+            using (Connection = new SqlConnection(ConnectionString))
+            {
+                string query = "SELECT * FROM Trainers WHERE 1 = 1";
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                {
+                    DataTable TrainersTable = new DataTable();
+                    adapter.Fill(TrainersTable);
+
+                    MenuTrainers.DisplayMember = "TrainerName";
+                    MenuTrainers.ValueMember = "Id";
+                    MenuTrainers.DataSource = TrainersTable;
+                }
+            }
+        }
+
+        private void PopulatePokemonBox()
+        {
+            using (Connection = new SqlConnection(ConnectionString))
+            {
+                string query = "SELECT * FROM Pokemon WHERE 1 = 1";
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                {
+                    DataTable PokemonTable = new DataTable();
+                    adapter.Fill(PokemonTable);
+
+                    MenuPokemon.DisplayMember = "PokemonName";
+                    MenuPokemon.ValueMember = "Id";
+                    MenuPokemon.DataSource = PokemonTable;
+                }
+            }
+        }
+
         private void PopulateTypeBox()
         {
             using (Connection = new SqlConnection(ConnectionString))
@@ -88,6 +127,24 @@ namespace PokemonTrainerDatabase
                     MenuType.DisplayMember = "Name";
                     MenuType.ValueMember = "Id";
                     MenuType.DataSource = TypeTable;
+                }
+            }
+        }
+
+        private void PopulateMovesBox()
+        {
+            using (Connection = new SqlConnection(ConnectionString))
+            {
+                string query = "SELECT * FROM Moves WHERE 1 = 1";
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(query, Connection))
+                {
+                    DataTable MovesTable = new DataTable();
+                    adapter.Fill(MovesTable);
+
+                    MenuMove.DisplayMember = "MoveName";
+                    MenuMove.ValueMember = "Id";
+                    MenuMove.DataSource = MovesTable;
                 }
             }
         }
