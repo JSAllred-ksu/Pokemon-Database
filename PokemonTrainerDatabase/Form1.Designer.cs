@@ -1049,7 +1049,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1074, 733);
+            this.ClientSize = new System.Drawing.Size(1074, 446);
             this.Controls.Add(this.ResultPokemon5);
             this.Controls.Add(this.RPM51);
             this.Controls.Add(this.RPM52);

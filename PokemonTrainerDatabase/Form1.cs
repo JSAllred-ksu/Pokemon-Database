@@ -51,7 +51,6 @@ namespace PokemonTrainerDatabase
                     MenuLocation.DisplayMember = "LocationName";
                     MenuLocation.ValueMember = "Id";
                     MenuLocation.DataSource = LocationsTable;
-                    MenuLocation.SelectedIndex = -1;
                 }
             }
         }
@@ -426,7 +425,7 @@ namespace PokemonTrainerDatabase
 
         private void TrainerPokemon3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (TrainerPokemon1.SelectedIndex == -1)
+            if (TrainerPokemon3.SelectedIndex == -1)
             {
                 TPM31.Enabled = false;
                 TPM32.Enabled = false;
@@ -507,7 +506,7 @@ namespace PokemonTrainerDatabase
 
         private void TrainerPokemon4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (TrainerPokemon1.SelectedIndex == -1)
+            if (TrainerPokemon4.SelectedIndex == -1)
             {
                 TPM41.Enabled = false;
                 TPM42.Enabled = false;
@@ -588,7 +587,7 @@ namespace PokemonTrainerDatabase
 
         private void TrainerPokemon5_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (TrainerPokemon1.SelectedIndex == -1)
+            if (TrainerPokemon5.SelectedIndex == -1)
             {
                 TPM51.Enabled = false;
                 TPM52.Enabled = false;
@@ -669,7 +668,7 @@ namespace PokemonTrainerDatabase
 
         private void TrainerPokemon6_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (TrainerPokemon1.SelectedIndex == -1)
+            if (TrainerPokemon6.SelectedIndex == -1)
             {
                 TPM61.Enabled = false;
                 TPM62.Enabled = false;
@@ -877,21 +876,23 @@ namespace PokemonTrainerDatabase
 
         private void AddTrainerButton_Click(object sender, EventArgs e)
         {
-            string ConnectionString = "Data Source=dbo;Initial Catalog=Trainers;Integrated Security=True";
             int max = 338;
             string name = TrainerName.Text;
             int loc = TrainerLocation.SelectedIndex + 1;
-            using (Connection = new SqlConnection(ConnectionString))
+            string connectionString = Properties.Settings.Default.PokemonTrainerDatabaseTablesConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                Connection.Open();
+                connection.Open();
                 string query = "INSERT INTO [dbo].[Trainers] ([TrainerID], [TrainerName], [LocationID]) VALUES (@Value1, @Value2, @Value3)";
-                using (SqlCommand command = new SqlCommand(query, Connection))
+                using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@Value1", max);
                     command.Parameters.AddWithValue("@Value2", name);
                     command.Parameters.AddWithValue("@Value3", loc);
+                    command.ExecuteNonQuery();
                 }
             }
+            //Connection.Close();
         }
 
         private void ResultsBox_SelectedIndexChanged(object sender, EventArgs e)
