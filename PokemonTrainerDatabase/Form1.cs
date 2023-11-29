@@ -18,6 +18,7 @@ namespace PokemonTrainerDatabase
     {
         SqlConnection Connection;
         string ConnectionString;
+        int max = 337;
 
         public Form1()
         {
@@ -876,7 +877,7 @@ namespace PokemonTrainerDatabase
 
         private void AddTrainerButton_Click(object sender, EventArgs e)
         {
-            int max = 338;
+            max++;
             string name = TrainerName.Text;
             int loc = TrainerLocation.SelectedIndex + 1;
             string connectionString = Properties.Settings.Default.PokemonTrainerDatabaseTablesConnectionString;
